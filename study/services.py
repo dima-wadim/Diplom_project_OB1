@@ -1,5 +1,5 @@
-from study.models import Question, Answer, Test
-from users.models import User
+from study.models import Question, Answer
+# from users.models import User
 
 
 def user_testing(user, test):
@@ -35,11 +35,3 @@ def user_testing(user, test):
     print("Результаты тестирования:")
     for question, result in test_results.items():
         print(f"{question}: {'Правильно' if result else 'Неправильно'}")
-
-
-# Пример использования функции
-# Предположим, что у нас есть пользователь user и тест test
-# user_instance = User.objects.get(id=1)
-# test_instance = Test.objects.get(id=1)
-#
-# user_testing(user=user_instance, test=test_instance)
