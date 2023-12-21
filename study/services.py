@@ -1,4 +1,4 @@
-from study.models import Question, Answer
+from study.models import Question, Answer, Test
 # from users.models import User
 
 
